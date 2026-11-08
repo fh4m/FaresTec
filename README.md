@@ -1,49 +1,19 @@
 # Fares Tec
 
-Fares Tec est une application Android pensée pour l'apprentissage de la programmation, destinée aux élèves de la filière sciences de l'informatique et aux étudiants de la voie scientifique du secondaire jusqu'au baccalauréat.
+تطبيق Android تعليمي أولي لطلاب شعبة علوم الإعلامية من السنة الثانية ثانوي إلى الرابعة ثانوي/الباكالوريا، بواجهة عربية وفرنسية.
 
-## Objectif
+## ما يتضمنه الإصدار الأول
+- واجهة رئيسية واختيار السنة الدراسية.
+- دروس تفاعلية في الخوارزميات، المتغيرات، الشروط، الحلقات، الجداول، والإجراءات/الدوال.
+- أمثلة شبه برمجية وأسئلة اختيار من متعدد مع تصحيح فوري.
+- شاشات الدروس والاختبارات والملف الشخصي.
+- تبديل العربية/الفرنسية داخل التطبيق.
 
-L'application aide les apprenants à :
-- découvrir la logique de programmation ;
-- apprendre les bases de Python, JavaScript, Java, SQL et HTML/CSS ;
-- suivre des cours par niveaux ;
-- tester leurs connaissances grâce à des quiz ;
-- réaliser des projets pratiques.
+## تشغيله
+افتح المشروع في Android Studio، انتظر مزامنة Gradle، ثم شغّله على محاكي أو جهاز Android (API 24 أو أحدث). يتطلب Android SDK 34 وJDK 17.
 
-## Structure de base du projet
+## حالة المحتوى
+هذا إصدار MVP تعليمي، وليس اعتمادًا رسميًا من وزارة التربية. يجب مراجعة ترتيب الدروس والمصطلحات والتمارين على ضوء آخر نسخة من البرنامج التونسي الرسمي قبل النشر. لا ينفّذ التطبيق شيفرة من المستخدم.
 
-- `app/` : application Android principale
-- `app/src/main/java/com/farestec/app/` : code Kotlin
-- `app/src/main/res/` : ressources visuelles et chaînes
-
-## Technologie utilisée
-
-- Kotlin
-- Jetpack Compose
-- Material 3
-- Navigation Compose
-
-## Lancement
-
-1. Ouvrir le projet dans Android Studio.
-2. Synchroniser Gradle.
-3. Lancer l'application sur un émulateur ou un appareil Android.
-
-## Prochaines améliorations prévues
-
-- ajout des vrais contenus pédagogiques par matière ;
-- quiz dynamiques avec score ;
-- sauvegarde du profil et de la progression ;
-- prise en charge de plusieurs langues ;
-- accès hors ligne aux cours.
-
-## Démarrage rapide
-
-Le projet contient déjà une base stable d'interface Android avec :
-- écran d'accueil ;
-- écran des cours ;
-- écran de quiz ;
-- écran des projets ;
-- écran du profil.
-
+## التقنية
+Kotlin، Jetpack Compose، Material 3.

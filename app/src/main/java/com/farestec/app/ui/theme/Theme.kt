@@ -5,32 +5,23 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
 private val DarkColorScheme = darkColorScheme(
     primary = FaresPrimary,
     secondary = FaresSecondary,
-    tertiary = Pink80,
-    background = Color(0xFF121212),
-    surface = Color(0xFF1E1E1E)
+    background = Color(0xFF12131A),
+    surface = Color(0xFF1E2029)
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = FaresPrimary,
     secondary = FaresSecondary,
-    tertiary = Pink40,
     background = FaresBackground,
     surface = Color.White
 )
 
 @Composable
-fun FaresTecTheme(
-    darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable () -> Unit
-) {
-    val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
-
-    MaterialTheme(
-        colorScheme = colorScheme,
-        content = content
-    )
+fun FaresTecTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+    MaterialTheme(colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme, content = content)
 }
